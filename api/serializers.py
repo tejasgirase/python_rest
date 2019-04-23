@@ -7,5 +7,5 @@ class BucketlistSerializers(serializers.ModelSerializer):
     class Meta:
         """Meta Class to map serializer fields with th modal fields"""
         model = Bucketlist
-        fields = ('id', 'name', 'date_created', 'date_modified')
+        fields = ('id', 'name', 'date_created', 'date_modified','owner')
         read_only_fields = ('date_created', 'date_modified')
